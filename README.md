@@ -26,7 +26,7 @@
 
 ### Built With
 
-Peduli Gizi dibuat dengan 
+dibuat dengan 
 
 * ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
 * ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
@@ -34,34 +34,42 @@ Peduli Gizi dibuat dengan
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-## Installation
+## Installation Frontend
 
 Clone Repository
 
 ```bash
-  git clone https://github.com/Youth-Creative-Technology/project_sms.git
+  git clone https://github.com/jasanya-tech/binar-project-ali.git
 ```
 
-Masuk Direktori Folder API
+Masuk Direktori Folder Client
 ```bash
-  cd API_SMS
+  cd client
 ```
+
+Install Packages
+```bash
+  npm install
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Install Vendor
+## Installation Backend
+Setelah proses installasi package frontend selesai, buka kembali terminal lalu masuk ke folder server
+```bash
+  cd server
+```
+
+setelah itu install package yang dibutuhkan backend dengan cara mengetikan perintah berikut di terminal
 ```bash
   composer install
 ```
-## Migration and Seeder
-Setelah itu buatlah database di phpmyadmin dengan nama sms, sesuaikan dengan yang ada di environment. Jika sudah buka lagi terminal lalu jalankan migrate dengan perintah berikut
+
+setelah itu jalankan xampp, lalu buat 1 database baru di phpmyadmin dengan nama sesuai dengan yang ada di `.env`, lalu ketikan perintah berikut di terminal untuk membuat struktur database
 ```bash
   php artisan migrate
 ```
 
-Lalu jalankan seeder dengan perintah berikut
-```bash
-  php artisan db:seed
-```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
@@ -73,15 +81,3 @@ Setelah proses installasi dan migration selesai. jalankan server dengan perintah
   php artisan serve
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## Endpoint API
-Untuk melihat list endpoint api, ketikan url berikut di browser
-```bash
-  http://127.0.0.1:8000/api/documentation
-```
-Jika list endpoint tidak muncul, buka kembali terminal lalu jalankan perintah berikut, lalu buka kembali `http://127.0.0.1:8000/api/documentation`
-```bash
-  php artisan l5-swagger:generate
-```
-<p align="right">(<a href="#top">back to top</a>)</p>
-

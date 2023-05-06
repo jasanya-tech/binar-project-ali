@@ -65,9 +65,14 @@ setelah itu install package yang dibutuhkan backend dengan cara mengetikan perin
   composer install
 ```
 
-setelah itu jalankan xampp, lalu buat 1 database baru di phpmyadmin dengan nama sesuai dengan yang ada di `.env`, lalu ketikan perintah berikut di terminal untuk membuat struktur database
+setelah itu jalankan xampp, lalu buat 1 database baru di phpmyadmin dengan nama bebas lalu cantumkan pada `.env`, kemudian ketikan perintah berikut di terminal untuk membuat struktur database
 ```bash
   php artisan migrate
+```
+
+setelah itu kita buat secret JWT nya dengan ketikan perintah di terminal
+```bash
+  php artisan jwt:secret
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>

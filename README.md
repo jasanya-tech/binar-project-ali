@@ -36,10 +36,15 @@ dibuat dengan
 
 ## Installation Frontend
 
-Clone Repository
+Clone Repository using git bash
 
 ```bash
   git clone https://github.com/jasanya-tech/binar-project-ali.git
+```
+
+Masuk Kedalam Derektori Repo
+```bash
+  cd binar-project-ali
 ```
 
 Masuk Direktori Folder Client
@@ -57,7 +62,7 @@ Install Packages
 ## Installation Backend
 Setelah proses installasi package frontend selesai, buka kembali terminal lalu masuk ke folder server
 ```bash
-  cd server
+  cd ../server
 ```
 
 setelah itu install package yang dibutuhkan backend dengan cara mengetikan perintah berikut di terminal
@@ -77,12 +82,28 @@ setelah itu kita buat secret JWT nya dengan ketikan perintah di terminal
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE -->
 ## Usage
 
-Setelah proses installasi dan migration selesai. jalankan server dengan perintah berikut
- 
+Setelah masuk vscode buka 2 terminal sebagai berikut
+![Screenshot (1)](https://user-images.githubusercontent.com/79908759/236600289-920950ed-07af-4683-b0fb-320ed742cefa.png)
+
+kemudian jalankan perintah berikut pada terminal 1
+```bash
+  cd server
+```
+Kemudian jalankan server Laravel
 ```bash
   php artisan serve
 ```
+
+Selanjutnya jalankan perintah berikut pada terminal 2
+```bash
+  cd client
+```
+Kemudian jalankan react js nya
+```bash
+  npm run start
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
